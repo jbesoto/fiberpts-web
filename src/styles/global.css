@@ -1,0 +1,239 @@
+html {
+  background-color: #302e2f;
+}
+
+/* Sidebar Styling */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0;
+  width: 100px;
+  height: auto;
+  align-items: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.sidebar li {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.sidebar li:hover {
+  background-color: #dc5204;
+  cursor: pointer;
+}
+
+.sidebar li:hover .nav-icon,
+.sidebar li:hover .nav-icon .material-symbols-outlined {
+  color: #302e2f;
+  transition: color 0.3s ease;
+}
+
+#logout {
+  margin-top: auto;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 20px;
+  height: auto;
+  color: #777779;
+}
+
+.nav-icon .material-symbols-outlined {
+  font-size: 2.2rem;
+  display: inline-block;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+/* Main Content Styling */
+
+.main {
+  position: relative;
+  flex-grow: 1;
+  border-radius: 20px;
+  background-color: #010103;
+  overflow-y: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 100px 40px 20px 40px;
+}
+
+/* Header */
+
+.status-bar {
+  display: flex;
+  flex-direction: row;
+  flex-grow: auto;
+  padding: 15px;
+  position: relative;
+}
+
+/* System Status Widget */
+
+.sys-status-widget {
+  width: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #302e2f;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  font-weight: bold;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+#sys-status::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #3dbe3b;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.sys-status-widget span {
+  padding: 0px 0 10px 0;
+  color: #777779;
+  font-size: 20px;
+}
+
+#sys-status {
+  color: #3dbe3b;
+  font-size: 15px;
+  padding: 0;
+}
+
+/* Profile */
+
+.profile {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 45px;
+  top: 10px;
+  padding: 15px;
+}
+
+.profile a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profile h6 {
+  margin: 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+.profile span {
+  display: block;
+  color: #828387;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  /* Adjusts sidebar for mobile */
+  .sidebar {
+    width: 80px; 
+    padding: 20px 0; 
+  }
+
+  .sidebar ul,
+  .sidebar li {
+    width: 40px; 
+    height: 40px; 
+    margin-bottom: 20px; 
+  }
+
+  .nav-icon .material-symbols-outlined {
+    font-size: 1.8rem; 
+  }
+
+  .logo {
+    width: 30px; 
+    margin-bottom: 2rem; 
+  }
+
+  .profile {
+    opacity: 0;
+  }
+
+  .main {
+    padding: 60px 20px 10px 20px;
+  }
+
+  /* Adjust profile for mobile */
+  .profile {
+    right: 15px;
+    top: 5px;
+  }
+
+  .profile-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile h6 {
+    font-size: 18px;
+  }
+
+  .profile span {
+    font-size: 14px;
+  }
+
+  /* Adjust system status widget for mobile */
+  .sys-status-widget {
+    width: 120px;
+    padding: 8px;
+  }
+
+  .sys-status-widget span,
+  #sys-status {
+    font-size: 18px;
+  }
+
+  #sys-status::before {
+    width: 8px;
+    height: 8px;
+  }
+}

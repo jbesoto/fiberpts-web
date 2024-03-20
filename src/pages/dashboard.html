@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FiberPTS</title>
+    <!-- Style Sheets -->
+    <link
+      href="../styles/pages/dashboard.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="../styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="../styles/global.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="flex sidebar">
+        <img class="logo" src="../assets/company_logo.webp"" alt="FiberPTS Logo"
+        />
+        <ul>
+          <li>
+            <a href="./dashboard.html" class="nav-icon">
+              <span class="material-symbols-outlined"> home </span>
+            </a>
+          </li>
+          <li>
+            <a href="./orders.html" class="nav-icon">
+              <span class="material-symbols-outlined"> inventory </span>
+            </a>
+          </li>
+          <li>
+            <a href="./data.html" class="nav-icon">
+              <span class="material-symbols-outlined"> database </span>
+            </a>
+          </li>
+          <li>
+            <a href="./devices.html" class="nav-icon">
+              <span class="material-symbols-outlined"> devices </span>
+            </a>
+          </li>
+          <li>
+            <a href="./employees.html" class="nav-icon">
+              <span class="material-symbols-outlined"> badge </span>
+            </a>
+          </li>
+          <li>
+            <a href="./settings.html" class="nav-icon">
+              <span class="material-symbols-outlined"> settings </span>
+            </a>
+          </li>
+          <li id="logout">
+            <a href="#" class="nav-icon">
+              <span class="material-symbols-outlined"> logout </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main">
+        <div class="sys-status-widget">
+          <span>FiberPTS</span>
+          <span id="sys-status">Active</span>
+        </div>
+        <div class="profile">
+          <div>
+            <img
+              src="https://media.intro.co/avatars/5389274Ts0dkiW.jpg"
+              alt="Profile Picture"
+              class="profile-img"
+            />
+          </div>
+          <a href="#">
+            <h6>Mike R. Ushed</h6>
+            <span>Ferrara Manufacturing</span>
+          </a>
+        </div>
+        <!-- Dashboard Content -->
+        <div class="content">
+          <main>
+            <h1>Dashboard</h1>
+            <!-- Production Graph -->
+            <div class="graph">
+              <div class="graph-header">
+                <h2>Production Graph</h2>
+                <div class="timeframe-filter-container">
+                  <ul class="selector">
+                    <li><a href="#">Day</a></li>
+                    <li><a href="#">Week</a></li>
+                    <li><a href="#">Month</a></li>
+                  </ul>
+                  <a id="mini-calendar" href="#">
+                    <span class="material-symbols-outlined">
+                      calendar_month
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <img
+                src="https://placehold.co/900x540/010103/FFFFFF?text=Graph+Here"
+                alt="Placeholder Image"
+              />
+            </div>
+          </main>
+          <!-- Additional Analytics -->
+          <aside>
+            <div class="widget-grid-2x2">
+              <div class="widget-s">
+                <span class="material-symbols-outlined"> package_2 </span>
+                <h3>242</h3>
+                <p>Units Completed</p>
+              </div>
+              <div class="widget-s">
+                <span class="material-symbols-outlined"> conveyor_belt </span>
+                <h3>89.32%</h3>
+                <p>Yield Rate</p>
+              </div>
+              <div class="widget-s">
+                <span class="material-symbols-outlined"> pace </span>
+                <h3>4:24</h3>
+                <p>Cycle Time</p>
+              </div>
+              <div class="widget-s">
+                <span class="material-symbols-outlined"> speed </span>
+                <h3>23</h3>
+                <p>Hourly Average</p>
+              </div>
+            </div>
+            <div class="widget-grid-1x2">
+              <div class="widget-m">
+                <span class="material-symbols-outlined"> inventory </span>
+                <h3>5</h3>
+                <p>Active Orders</p>
+                <a href="#">
+                  <!-- <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                  </span> -->
+                </a>
+              </div>
+              <div class="widget-m">
+                <span class="material-symbols-outlined"> badge </span>
+                <h3>42</h3>
+                <p>Active Employees</p>
+                <a href="#">
+                  <!-- <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                  </span> -->
+                </a>
+              </div>
+            </div>
+            <!-- Resource Utilization Graph -->
+            <div class="widget-grid">
+              <div class="widget-l">
+                <h2>Resource Utilization</h2>
+                <img
+                  src="https://placehold.co/450x450/010103/FFFFFF?text=Graph+Here"
+                  alt="400x400 Placeholder Image"
+                />
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
